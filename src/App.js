@@ -8,13 +8,19 @@ function App() {
 	return (
 		<div className="App">
 			<h1>
-				<NavBar />
+				<NavBar className="NavBar" />
 			</h1>
 			<h2>
 				<Header />
 			</h2>
 			<h3>
-				<ProfileCard />
+				<ProfileCard animal="cat" email="ari@gmail.com" />
+			</h3>
+			<h3>
+				<ProfileCard animal="lion" />
+			</h3>
+			<h3>
+				<ProfileCard animal="dog" />
 			</h3>
 		</div>
 	);
