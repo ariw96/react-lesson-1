@@ -2,7 +2,7 @@
 import "./App.css";
 import Header from "./components/Header";
 import NavBar from "./components/NavBar";
-import ProfileCard from "./components/ProfileCard";
+import ProfileCard from "./components/card/ProfileCard";
 import AlexaImage from "./images/alexa.png";
 import CortanaImage from "./images/cortana.png";
 import SiriImage from "./images/siri.png";
@@ -20,7 +20,7 @@ function App() {
 				<ProfileCard image={AlexaImage} title="Alexa" />
 			</h3>
 			<h3>
-				<ProfileCard image={CortanaImage} />
+				<ProfileCard image={CortanaImage} title="Cortana" />
 			</h3>
 			<h3>
 				<ProfileCard image={SiriImage} title="Siri" />
