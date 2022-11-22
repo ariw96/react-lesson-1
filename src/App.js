@@ -3,24 +3,27 @@ import "./App.css";
 import Header from "./components/Header";
 import NavBar from "./components/NavBar";
 import ProfileCard from "./components/ProfileCard";
+import AlexaImage from "./images/alexa.png";
+import CortanaImage from "./images/cortana.png";
+import SiriImage from "./images/siri.png";
 
 function App() {
 	return (
 		<div className="App">
-			<h1>
+			{/* <h1>
 				<NavBar className="NavBar" />
 			</h1>
 			<h2>
 				<Header />
-			</h2>
+			</h2> */}
 			<h3>
-				<ProfileCard animal="cat" email="ari@gmail.com" />
+				<ProfileCard image={AlexaImage} title="Alexa" />
 			</h3>
 			<h3>
-				<ProfileCard animal="lion" />
+				<ProfileCard image={CortanaImage} />
 			</h3>
 			<h3>
-				<ProfileCard animal="dog" />
+				<ProfileCard image={SiriImage} title="Siri" />
 			</h3>
 		</div>
 	);

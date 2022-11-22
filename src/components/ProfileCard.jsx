@@ -1,10 +1,12 @@
 import React from "react";
 
-function ProfileCard(props) {
+function ProfileCard({ image, title }) {
 	return (
 		<>
-			<div>My favorite animal is {props.animal}</div>;
-			<div>My email is {props.email}</div>;
+			<div>
+				<h1>{title}</h1>
+				<img src={image} alt="" />
+			</div>
 		</>
 	);
 }
